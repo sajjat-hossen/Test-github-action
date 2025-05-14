@@ -32,4 +32,4 @@ jobs:
         git config --global user.email 'sajjat.hossen@brainstation-23.com'
         git add README.md
         git commit -m 'Generated README.md'
-        git push
+        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
