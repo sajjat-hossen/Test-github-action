@@ -1,0 +1,21 @@
+{
+  "Graph Theory": [
+    {
+      "topic": "Dijkstra's Algorithm",
+      "resources": [
+        { "type": "Article", "title": "GeeksforGeeks", "url": "https://example.com" },
+        { "type": "Video", "title": "YouTube", "url": "https://youtube.com" }
+      ],
+      "code": "./Graph Theory/dijkstra.cpp"
+    }
+  ],
+  "Number Theory": [
+    {
+      "topic": "GCD & LCM",
+      "resources": [
+        { "type": "Article", "title": "Tutorial", "url": "https://example.com/gcd" }
+      ],
+      "code": "./Number Theory/gcd_lcm.cpp"
+    }
+  ]
+}
