@@ -28,8 +28,8 @@ jobs:
     # Step 5: Commit and push the generated README.md back to the repository
     - name: Commit and push the generated README
       run: |
-        git config --global user.name 'sajjat-hossen'
-        git config --global user.email 'sajjat.hossen@brainstation-23.com'
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add README.md
         git commit -m 'Generated README.md'
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
