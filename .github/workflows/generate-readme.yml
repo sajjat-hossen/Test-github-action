@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'resources.json'   # Trigger only if this file changes
   workflow_dispatch:
 
 jobs:
@@ -21,15 +23,15 @@ jobs:
       with:
         python-version: '3.9'
       
-    # Step 4: Run the Python script to generate the README.md file
+    # Step 3: Run the Python script to generate the README.md file
     - name: Generate README
       run: python generate_readme.py
 
-    # Step 5: Commit and push the generated README.md back to the repository
+    # Step 4: Commit and push the generated README.md back to the repository
     - name: Commit and push the generated README
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add README.md
-        git commit -m 'Generated README.md'
+        git diff --cached --quiet || git commit -m 'Generated README.md'
         git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
