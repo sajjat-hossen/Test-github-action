@@ -4,7 +4,7 @@
 
 | Topic | Resources | Code |
 |-------|-----------|------|
-| Dijkstra's Algorithm | [Article - GeeksforGeeks](https://example.com)<br>[Video - YouTube](https://youtube.com) | [Code](./Graph Theory/dijkstra.cpp) |
+| Dijkstra's Algorithm22 | [Article - GeeksforGeeks](https://example.com)<br>[Video - YouTube](https://youtube.com) | [Code](./Graph Theory/dijkstra.cpp) |
 
 ---
 
