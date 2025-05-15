@@ -1,7 +1,7 @@
 {
   "Graph Theory": [
     {
-      "topic": "Dijkstra's Algorithm",
+      "topic": "Dijkstra's Algorithm22",
       "resources": [
         { "type": "Article", "title": "GeeksforGeeks", "url": "https://example.com" },
         { "type": "Video", "title": "YouTube", "url": "https://youtube.com" }
